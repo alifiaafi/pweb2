@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit Data Dosen</title>
+    <title>Tambah Data Dosen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -31,35 +31,26 @@
 <br>
 <h3>Tambah Data Dosen</h3>
 <br>
-<form action="proses_dosen.php?aksi=tambah_dosen" method="post">
-    <table>
-        <tr>
-            <td>NIDN</td>
-            <td><input type="text" name="nidn"></td>
-        </tr>
-        <tr>
-            <td>Nama</td>
-            <td><input type="text" name="nama"></td>
-        </tr>
-        <tr>
-            <td>Matkul</td>
-            <td><input type="text" name="matkul"></td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>
-                <textarea name="alamat" cols="30" rows="5"></textarea>
-            </td>
-            </tr>
-        <tr>
-            <td></td>
-            <td>
-                <div style="display: flex; justify-content: space-between;">
-                <a href="tampil_dosen.php" type="button" class="btn btn-primary">KEMBALI</a>
-                <input class="btn btn-success" type="submit" value="SIMPAN">
-                </div>
-            </td>
-        </tr>
-    </table>
-</form>
 
+<form action="proses_dosen.php?aksi=tambah_dosen" method="post">
+        <div class="mb-3">
+            <label for="nim" class="form-label">NIDN</label>
+            <input type="text" class="form-control" name="nidn">
+        </div>
+        <div class="mb-3">
+            <label for="nim" class="form-label">Nama</label>
+            <input type="text" class="form-control" name="nama">
+        </div>
+        <div class="mb-3">
+            <label for="nim" class="form-label">Mata Kuliah</label>
+            <input type="text" class="form-control" name="matkul">
+        </div>
+        <div class="mb-3">
+            <label for="nim" class="form-label">Alamat</label>
+            <textarea class="form-control" cols="30" rows="5" name="alamat"></textarea>
+        </div>
+        <div>
+        <a href="tampil_mhs.php" type="submit" class="btn btn-primary">Kembali</a>
+        <input type="submit" class="btn btn-success" value="Simpan">
+        </div>
+</form>
