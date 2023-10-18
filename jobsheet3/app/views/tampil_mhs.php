@@ -45,19 +45,19 @@ $db = new database;
 error_reporting(E_ERROR | E_PARSE);
 if ($_GET ['succes'] === "tambah") {
  echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Data Dosen Berhasil Ditambahkan!</strong>
+  <strong>Data Mahasiswa Berhasil Ditambahkan!</strong>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>';
 }
 else if ($_GET ['succes'] === "update") {
  echo '<div class="alert alert-primary alert-dismissible fade show" role="alert">
-  <strong>Data Dosen Berhasil Diupdate!</strong>
+  <strong>Data Mahasiswa Berhasil Diupdate!</strong>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>';
 }
 else if ($_GET ['succes'] === "hapus") {
  echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Data Dosen Berhasil Dihapus!</strong>
+  <strong>Data Mahasiswa Berhasil Dihapus!</strong>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>';
 }
