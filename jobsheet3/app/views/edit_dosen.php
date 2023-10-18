@@ -42,7 +42,7 @@ $db = new database();
 <?php
 foreach ($db -> edit_dosen ($_GET['id']) as $d){
 ?>
-    <table>
+        <table>
         <tr>
             <td>NIDN</td>
             <td>
@@ -68,12 +68,12 @@ foreach ($db -> edit_dosen ($_GET['id']) as $d){
             <td></td>
             <td>
                 <div style="display: flex; justify-content: space-between;">
-                <button type="button" class="btn btn-primary">KEMBALI</button>
+                <a href="tampil_dosen.php" type="button" class="btn btn-primary">KEMBALI</a>
                 <input class="btn btn-success" type="submit" value="SIMPAN">
                 </div>
             </td>
         </tr>
-    </table>
+        </table>
 <?php
 }
 ?>

@@ -52,7 +52,7 @@
             <td></td>
             <td>
                 <div style="display: flex; justify-content: space-between;">
-                <button type="button" class="btn btn-primary">KEMBALI</button>
+                <a href="tampil_mhs.php" type="button" class="btn btn-primary">KEMBALI</a>
                 <input class="btn btn-success" type="submit" value="SIMPAN">
                 </div>
             </td>

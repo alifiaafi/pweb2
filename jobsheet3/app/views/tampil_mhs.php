@@ -63,7 +63,8 @@ else if ($_GET ['succes'] === "hapus") {
 }
 ?>
 
-<table class="table">
+<div class="table-responsive small">
+<table class="table table-striped table-border">
     <tr>
         <th>No</th>
         <th>NIM</th>
@@ -71,6 +72,7 @@ else if ($_GET ['succes'] === "hapus") {
         <th>Alamat</th>
         <th>Aksi</th>
     </tr>
+
 <?php
 $no = 1;
 foreach($db -> tampil_mahasiswa() as $x){
@@ -89,5 +91,6 @@ foreach($db -> tampil_mahasiswa() as $x){
 }
 ?>
 </table>
+</div>
 </div>
 </div>

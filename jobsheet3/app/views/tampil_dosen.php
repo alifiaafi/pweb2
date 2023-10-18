@@ -63,7 +63,9 @@ else if ($_GET ['succes'] === "hapus") {
 }
 ?>
 
-<table class="table">
+<div class="table-responsive small">
+<table class="table table-striped table-border">
+
     <tr>
         <th>No</th>
         <th>NIDN</th>
@@ -92,5 +94,6 @@ foreach($db -> tampil_dosen() as $d){
 }
 ?>
 </table>
+</div>
 </div>
 </div>
