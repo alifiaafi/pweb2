@@ -37,7 +37,8 @@ $db = new database;
   </div>
 </nav>
 
-<div class="px-5">
+<div class="px-2">
+<br>
 <h3>Data Dosen</h3>
 <a class="btn btn-primary mb-2 mt-2" href="input_dosen.php">Tambah Dosen</a>
 
