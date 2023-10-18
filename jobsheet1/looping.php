@@ -26,11 +26,10 @@
                 $prima = false;
                 break;
             }
-        }
-    if ($prima) {
+        } if ($prima) {
         echo $angka . " " . "<br>";
-    }
-    $angka++;
+        }
+        $angka++;
     } while ($angka < 20);
     ?>
 </body>

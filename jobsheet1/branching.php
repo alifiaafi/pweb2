@@ -9,6 +9,7 @@
         Masukkan nilai x: <input type="text" name="x">
         <input type="submit" value="submit">
     </form>
+    
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $x = $_POST["x"];
