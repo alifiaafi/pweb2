@@ -30,7 +30,8 @@
         echo $angka . " " . "<br>";
         }
         $angka++;
-    } while ($angka < 20);
+    }
+    while ($angka < 20);
     ?>
 </body>
 </html>
