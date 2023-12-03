@@ -5,10 +5,12 @@ RewriteCond %(REQUEST_FILENAME) !-f
 RewriteCond %(REQUEST_FILENAME) !-d
 RewriteRule ^home/?$ index.php?page=$1 [L]
 
-RewriteCond %(REQUEST_FILENAME) !-f
-RewriteCond %(REQUEST_FILENAME) !-d
-RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
+RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php
+RewriteRule ^tambahMahasiswa/?$ views/mahasiswa/tambah.php
+RewriteRule ^editMahasiswa/?$ views/mahasiswa/edit.php
+RewriteRule ^hapusMahasiswa/?$ views/mahasiswa/hapus.php
 
-RewriteCond %(REQUEST_FILENAME) !-f
-RewriteCond %(REQUEST_FILENAME) !-d
-RewriteRule ^dosen/?$ views/dosen/index.php?page=$1 [L]
+RewriteRule ^dosen/?$ views/dosen/index.php
+RewriteRule ^tambahDosen/?$ views/dosen/tambah.php
+RewriteRule ^editDosen/?$ views/dosen/edit.php
+RewriteRule ^hapusDosen/?$ views/dosen/hapus.php

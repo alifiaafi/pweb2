@@ -15,7 +15,7 @@ $dosen = $dosenController -> getAllDosen();
 <div class="px-2">
 <br>
 <h3>Data Dosen</h3>
-<a class="btn btn-primary mb-2 mt-2" href="tambah.php">Tambah Dosen</a>
+<a class="btn btn-primary mb-2 mt-2" href="tambahDosen">Tambah Dosen</a>
 
 <!-- <?php
 error_reporting(E_ERROR | E_PARSE);
@@ -61,8 +61,8 @@ foreach($dosen as $x){
     <td><?php echo $x['alamat'] ?></td>
     <td><?php echo $x['matkul'] ?></td>
     <td>
-        <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?> ">Edit</a>
-        <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?> "onclick="return confirm('Apakah yakin akan menghapus...?')">Hapus</a>
+        <a class="btn btn-warning" href="editDosen?id=<?php echo $x['id']; ?> ">Edit</a>
+        <a class="btn btn-danger" href="hapusDosen?id=<?php echo $x['id']; ?> "onclick="return confirm('Apakah yakin akan menghapus...?')">Hapus</a>
     </td>
 </tr>
 <?php

@@ -15,7 +15,7 @@ $mahasiswa = $mahasiswaController -> getAllMahasiswa();
 <div class="px-2">
 <br>
 <h3>Data Mahasiswa</h3>
-<a class="btn btn-primary mb-2 mt-2" href="tambah.php">Tambah Mahasiswa</a>
+<a class="btn btn-primary mb-2 mt-2" href="tambahMahasiswa">Tambah Mahasiswa</a>
 
 <!-- <?php
 error_reporting(E_ERROR | E_PARSE);
@@ -65,8 +65,8 @@ foreach($mahasiswa as $x){
     <td><?php echo $x['agama'] ?></td>
     <td><?php echo $x['alamat'] ?></td>
     <td>
-        <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?> ">Edit</a>
-        <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?> "onclick="return confirm('Apakah yakin akan menghapus...?')">Hapus</a>
+        <a class="btn btn-warning" href="editMahasiswa?id=<?php echo $x['id']; ?> ">Edit</a>
+        <a class="btn btn-danger" href="hapusMahasiswa?id=<?php echo $x['id']; ?> "onclick="return confirm('Apakah yakin akan menghapus...?')">Hapus</a>
     </td>
 </tr>
 <?php

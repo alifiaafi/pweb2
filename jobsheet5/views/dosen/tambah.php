@@ -18,10 +18,10 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Mahasiswa</a>
+          <a class="nav-link" href="mahasiswa">Mahasiswa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Dosen</a>
+          <a class="nav-link" href="dosen">Dosen</a>
         </li>
       </ul>
     </div>
@@ -50,7 +50,7 @@
             <textarea class="form-control" cols="30" rows="5" name="matkul"></textarea>
         </div>
         <div>
-        <a href="index.php" type="submit" class="btn btn-primary">Kembali</a>
+        <a href="dosen" type="submit" class="btn btn-primary">Kembali</a>
         <input type="submit" name="submit" class="btn btn-success" value="Simpan">
         </div>
 </form>
