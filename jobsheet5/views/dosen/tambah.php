@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tambah Data Mahasiswa</title>
+    <title>Tambah Data Dosen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -21,7 +21,7 @@
           <a class="nav-link" href="index.php">Mahasiswa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tampil_dosen.php">Dosen</a>
+          <a class="nav-link" href="index.php">Dosen</a>
         </li>
       </ul>
     </div>
@@ -29,47 +29,25 @@
 </nav>
 
 <br>
-<h3>Tambah Data Mahasiswa</h3>
+<h3>Tambah Data Dosen</h3>
 <br>
 
 <form action="proses_tambah.php" method="post">
         <div class="col-md-5 mb-3">
-            <label for="nim" class="form-label">NIM</label>
-            <input type="text" class="form-control" name="nim">
+            <label for="nidn" class="form-label">NIDN</label>
+            <input type="text" class="form-control" name="nidn">
         </div>
         <div class="col-md-5 mb-3">
             <label for="nama" class="form-label">Nama</label>
             <input type="text" class="form-control" name="nama">
         </div>
         <div class="col-md-5 mb-3">
-            <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-            <input type="text" class="form-control" name="tempat_lahir">
-        </div>
-        <div class="col-md-5 mb-3">
-            <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-            <div>
-                <select name = "jenis_kelamin">
-                    <option value="Laki-laki">Laki-laki</option>
-                    <option value="Perempuan">Perempuan</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-5 mb-3">
-            <label for="agama" class="form-label">Agama</label>
-            <div>
-                <select name = "agama">
-                    <option value = "Islam">Islam</option>
-                    <option value = "Kristen">Kristen</option>
-                    <option value = "Katolik">Katolik</option>
-                    <option value = "Hindu">Hindu</option>
-                    <option value = "Budha">Budha</option>
-                    <option value = "Konghucu">Konghucu</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-5 mb-3">
             <label for="alamat" class="form-label">Alamat</label>
             <textarea class="form-control" cols="30" rows="5" name="alamat"></textarea>
+        </div>
+        <div class="col-md-5 mb-3">
+            <label for="matkul" class="form-label">Matkul</label>
+            <textarea class="form-control" cols="30" rows="5" name="matkul"></textarea>
         </div>
         <div>
         <a href="index.php" type="submit" class="btn btn-primary">Kembali</a>
