@@ -32,7 +32,7 @@
 <h3>Tambah Data Mahasiswa</h3>
 <br>
 
-<form action="proses_tambah.php" method="post">
+<form action="proses_tambahMahasiswa" method="post">
         <div class="col-md-5 mb-3">
             <label for="nim" class="form-label">NIM</label>
             <input type="text" class="form-control" name="nim">
