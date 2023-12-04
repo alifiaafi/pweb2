@@ -16,9 +16,9 @@ if (isset($_POST['submit'])) {
     $result=$dosenController->createDosen($nidn, $nama, $alamat, $matkul);
 
     if($result){
-        header("location:index.php");
+        header("location:dosen?succes=tambah");
     }else{
-        header("location:tambah.php");
+        header("location:tambahDosen");
     }
 }
 ?>

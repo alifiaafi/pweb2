@@ -32,7 +32,7 @@
 <h3>Tambah Data Dosen</h3>
 <br>
 
-<form action="proses_tambah.php" method="post">
+<form action="proses_tambahDosen" method="post">
         <div class="col-md-5 mb-3">
             <label for="nidn" class="form-label">NIDN</label>
             <input type="text" class="form-control" name="nidn">

@@ -36,7 +36,7 @@ class Dosen{
 
     public function updateDosen($id, $nidn, $nama, $alamat, $matkul)
     {
-        $query = "UPDATE dosen set nidn='$nidn', nama='$nama', alamat='$alamat' matkul='$matkul' where id='$id'";
+        $query = "UPDATE dosen set nidn='$nidn', nama='$nama', alamat='$alamat', matkul='$matkul' where id='$id'";
         $result = mysqli_query($this->koneksi, $query);
         if ($result) {
             return true;

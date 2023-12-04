@@ -13,7 +13,7 @@ if(isset($_GET['id'])) {
     $result = $mahasiswaController -> deleteMahasiswa($id);
 
     if ($result) {
-        header("location:mahasiswa");
+        header("location:mahasiswa?succes=hapus");
     } else {
         echo "Gagal menghapus data";
     }

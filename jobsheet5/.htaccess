@@ -7,10 +7,12 @@ RewriteRule ^home/?$ index.php?page=$1 [L]
 
 RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php
 RewriteRule ^tambahMahasiswa/?$ views/mahasiswa/tambah.php
+RewriteRule ^proses_tambahMahasiswa/?$ views/mahasiswa/proses_tambah.php
 RewriteRule ^editMahasiswa/?$ views/mahasiswa/edit.php
 RewriteRule ^hapusMahasiswa/?$ views/mahasiswa/hapus.php
 
 RewriteRule ^dosen/?$ views/dosen/index.php
 RewriteRule ^tambahDosen/?$ views/dosen/tambah.php
+RewriteRule ^proses_tambahDosen/?$ views/dosen/proses_tambah.php
 RewriteRule ^editDosen/?$ views/dosen/edit.php
 RewriteRule ^hapusDosen/?$ views/dosen/hapus.php

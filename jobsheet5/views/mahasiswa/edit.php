@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
             $result = $mahasiswaController->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $jenis_kelamin, $agama, $alamat);
 
             if ($result) {
-                header ("location:mahasiswa");
+                header ("location:mahasiswa?succes=update");
             } else {
                 header("location:editMahasiswa");
             }
@@ -74,30 +74,27 @@ if (isset($_GET['id'])) {
 if ($mahasiswaData) {
 ?>
     <form action="" method="post">
+    <div class="row">
         <?php
         foreach ($mahasiswaData as $d => $value) {
         ?>
-            <table border="0">
-                <tr>
-                    <td width="100">
-                        <?php
-                        echo $d;
-                        ?>
-                    </td>
-                    <td>
-                        <input type="text" name="<?php echo $d ?>" value="<?php echo $value ?>">
-                    </td>
-                </tr>
-                <?php
-        }
+           <div class="col-md-5 mb-3">
+            <?php
+            echo $d;
             ?>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" name="submit" value="simpan">
-                </td>
-            </tr>
-            </table>
+              <label for="<?php echo $d ?>" class="form-label"></label>
+              <input type="text" class="form-control" id="<?php echo $d ?>" name="<?php echo $d ?>" value="<?php echo $value ?>">
+          </div>
+        <?php
+        }
+        ?>
+        </div>
+            <div class="row">
+            <div class="col-md-5 mb-3">
+              <a href="mahasiswa" type="submit" class="btn btn-primary">Kembali</a>
+              <input type="submit" name="submit" class="btn btn-success" value="Simpan">
+            </div>
+            </div>
     </form>
 <?php
 }

@@ -56,9 +56,9 @@ if (isset($_GET['id'])) {
             $result = $dosenController->updateDosen($id, $nidn, $nama, $alamat, $matkul);
 
             if ($result) {
-                header ("location:index.php");
+                header ("location:dosen?succes=update");
             } else {
-                header("location:edit.php");
+                header("location:editDosen");
             }
         }
     } else {
@@ -71,34 +71,31 @@ if (isset($_GET['id'])) {
 if ($dosenData) {
 ?>
     <form action="" method="post">
+      <div class="row">
         <?php
         foreach ($dosenData as $d => $value) {
         ?>
-            <table border="0">
-                <tr>
-                    <td width="100">
-                        <?php
-                        echo $d;
-                        ?>
-                    </td>
-                    <td>
-                        <input type="text" name="<?php echo $d ?>" value="<?php echo $value ?>">
-                    </td>
-                </tr>
-                <?php
-        }
+          <div class="col-md-5 mb-3">
+            <?php
+            echo $d;
             ?>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" name="submit" value="simpan">
-                </td>
-            </tr>
-            </table>
-    </form>
-<?php
-}
-?>
+              <label for="<?php echo $d ?>" class="form-label"></label>
+              <input type="text" class="form-control" id="<?php echo $d ?>" name="<?php echo $d ?>" value="<?php echo $value ?>">
+          </div>
+        <?php
+        }
+        ?>
+        </div>
+            <div class="row">
+            <div class="col-md-5 mb-3">
+              <a href="dosen" type="submit" class="btn btn-primary">Kembali</a>
+              <input type="submit" name="submit" class="btn btn-success" value="Simpan">
+            </div>
+            </div>
+        </form>
+      <?php
+      }
+      ?>
 
 <!-- <div class="mb-3">
     <label for="<?php echo $d ?>" class="form-label"><?php echo ucfirst($d) ?></label>

@@ -17,7 +17,7 @@ $dosen = $dosenController -> getAllDosen();
 <h3>Data Dosen</h3>
 <a class="btn btn-primary mb-2 mt-2" href="tambahDosen">Tambah Dosen</a>
 
-<!-- <?php
+<?php
 error_reporting(E_ERROR | E_PARSE);
 if ($_GET ['succes'] === "tambah") {
  echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -37,7 +37,7 @@ else if ($_GET ['succes'] === "hapus") {
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>';
 }
-?> -->
+?>
 
 <div class="table-responsive small">
 <table class="table table-striped table-border">
